@@ -1,0 +1,286 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.37.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Mateusz Ryba, rybka, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.37.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.18
+Assembler:       Armasm.exe V6.18
+Linker/Locator:  ArmLink.exe V6.18
+Library Manager: ArmAr.exe V6.18
+Hex Converter:   FromElf.exe V6.18
+CPU DLL:         SARMCM3.DLL V5.37.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.56.1.0
+ 
+<h2>Project:</h2>
+C:\Users\p1991\OneDrive - Wojskowa Akademia Techniczna\WAT Elektronika i Telekomunikacja 2 stopien\Praca Magisterska\blinkyKeil\MDK\Boards\ST\STM32H743I_EVAL\Blinky\Blinky.uvprojx
+Project File Date:  11/22/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.18', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Debug'
+compiling mfxstm32l152_reg.c...
+assembling irq_armv7m.S...
+compiling Buttons_743I_EVAL.c...
+compiling Blinky.c...
+compiling stm32h7xx_it.c...
+compiling LED_743I_EVAL.c...
+compiling main.c...
+compiling stm32h743i_eval_io.c...
+compiling stm32h743i_eval.c...
+compiling mfxstm32l152.c...
+compiling stm32h743i_eval_bus.c...
+compiling rtx_delay.c...
+compiling rtx_lib.c...
+compiling rtx_memory.c...
+compiling rtx_evr.c...
+compiling rtx_evflags.c...
+compiling rtx_system.c...
+compiling rtx_kernel.c...
+compiling rtx_semaphore.c...
+compiling rtx_mempool.c...
+compiling rtx_mutex.c...
+compiling RTX_Config.c...
+compiling rtx_msgqueue.c...
+compiling os_systick.c...
+compiling rtx_timer.c...
+compiling stm32h7xx_hal.c...
+compiling stm32h7xx_hal_cortex.c...
+compiling EventRecorder.c...
+compiling rtx_thread.c...
+compiling stm32h7xx_hal_exti.c...
+compiling stm32h7xx_hal_dma_ex.c...
+compiling stm32h7xx_hal_gpio.c...
+compiling stm32h7xx_hal_adc.c...
+compiling stm32h7xx_hal_i2c_ex.c...
+compiling stm32h7xx_hal_adc_ex.c...
+compiling stm32h7xx_hal_ltdc.c...
+compiling stm32h7xx_hal_ltdc_ex.c...
+compiling stm32h7xx_hal_dma.c...
+compiling stm32h7xx_hal_pwr.c...
+compiling stm32h7xx_hal_pwr_ex.c...
+compiling stm32h7xx_hal_mdma.c...
+assembling startup_stm32h743xx.s...
+compiling stm32h7xx_hal_sdram.c...
+compiling stm32h7xx_hal_rcc.c...
+compiling stm32h7xx_hal_uart_ex.c...
+compiling stm32h7xx_ll_fmc.c...
+compiling stm32h7xx_hal_msp.c...
+compiling system_stm32h7xx.c...
+compiling stm32h7xx_hal_rcc_ex.c...
+compiling stm32h7xx_hal_i2c.c...
+compiling stm32h7xx_hal_uart.c...
+linking...
+Program Size: Code=20616 RO-data=1052 RW-data=176 ZI-data=8868  
+".\Debug\Blinky.axf" - 0 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: RTOS2 Version: 2.1.3
+   * Component: CORE Version: 5.6.0
+   * Component: Keil RTX5 Variant: Source Version: 5.5.4
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.ARM_Compiler.1.7.2.pack
+                Keil.ARM_Compiler.1.7.2
+                Keil ARM Compiler extensions for ARM Compiler 5 and ARM Compiler 6
+   * Component: Event Recorder Variant: DAP Version: 1.5.1
+
+Package Vendor: Keil
+                project-path/Keil.FrameworkCubeMX.1.0.0.pack
+                Keil.FrameworkCubeMX.1.0.0
+                STM32CubeMX generated pack description
+   * Component: STM32CubeMX Version: 2.0.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.MDK-Middleware.7.15.0.pack
+                Keil.MDK-Middleware.7.15.0
+                Middleware for Keil MDK-Professional and MDK-Plus
+   * Component: Buttons Version: 1.0.0
+   * Component: LED Version: 1.0.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32H7xx_DFP.3.0.0.pack
+                Keil.STM32H7xx_DFP.3.0.0
+                STMicroelectronics STM32H7 Series Device Support and Examples
+   * Component: STM32Cube Framework Version: 1.1.0
+   * Component: Buttons Version: 1.1.0
+   * Component: BUS Version: 1.1.0
+   * Component: Basic I/O Version: 1.1.0
+   * Component: I/O Version: 1.1.0
+   * Component: LED Version: 1.1.0
+   * Component: ADC Version: 1.9.0
+   * Component: Common Version: 1.9.0
+   * Component: Cortex Version: 1.9.0
+   * Component: DMA Version: 1.9.0
+   * Component: EXTI Version: 1.9.0
+   * Component: GPIO Version: 1.9.0
+   * Component: I2C Version: 1.9.0
+   * Component: LTDC Version: 1.9.0
+   * Component: MDMA Version: 1.9.0
+   * Component: PWR Version: 1.9.0
+   * Component: RCC Version: 1.9.0
+   * Component: SDRAM Version: 1.9.0
+   * Component: UART Version: 1.9.0
+   * Component: Startup Version: 1.9.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Board_Support/STM32H743XIHx
+  ./RTE/CMSIS
+  ./RTE/Compiler
+  ./RTE/_Debug
+  ./STM32CubeMX
+  ./STM32CubeMX/STCubeGenerated
+  ./STM32CubeMX/STCubeGenerated/Inc
+  C:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include
+  C:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include
+  C:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include
+  C:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board
+  C:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL
+  C:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include
+  C:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::Board Support:Buttons:1.0.0 (API)
+      Include file:  Board/Board_Buttons.h
+
+   * Component: ::Board Support:LED:1.0.0 (API)
+      Include file:  Board/Board_LED.h
+
+   * Component: ::CMSIS:RTOS2:2.1.3 (API)
+      Include file:  CMSIS/RTOS2/Include/cmsis_os2.h
+
+   * Component: ::Device:STM32Cube Framework:1.1.0 (API)
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: ARM::CMSIS:RTOS2:Keil RTX5:Source:5.5.4
+      Source file:   CMSIS/RTOS2/Source/os_systick.c
+      Source file:   CMSIS/RTOS2/RTX/Source/rtx_lib.c
+      Source file:   CMSIS/RTOS2/RTX/Source/rtx_msgqueue.c
+      Source file:   CMSIS/RTOS2/RTX/Source/rtx_evr.c
+      Source file:   CMSIS/RTOS2/RTX/Source/GCC/irq_armv7m.S
+      Source file:   CMSIS/RTOS2/RTX/Source/rtx_system.c
+      Source file:   CMSIS/RTOS2/RTX/Source/rtx_mempool.c
+      Source file:   CMSIS/RTOS2/RTX/Template/main.c
+      Source file:   CMSIS/RTOS2/RTX/Template/Semaphore.c
+      Source file:   CMSIS/RTOS2/RTX/Template/Timer.c
+      Source file:   CMSIS/RTOS2/RTX/Template/svc_user.c
+      Include file:  CMSIS/RTOS2/RTX/Config/RTX_Config.h
+      Source file:   CMSIS/RTOS2/RTX/Template/Events.c
+      Source file:   CMSIS/RTOS2/RTX/Config/RTX_Config.c
+      Source file:   CMSIS/RTOS2/RTX/Template/MemPool.c
+      Source file:   CMSIS/RTOS2/RTX/Template/MsgQueue.c
+      Source file:   CMSIS/RTOS2/RTX/Template/Mutex.c
+      Source file:   CMSIS/RTOS2/RTX/Template/Thread.c
+      Include file:  CMSIS/RTOS2/RTX/Include/rtx_os.h
+      Source file:   CMSIS/RTOS2/RTX/Source/rtx_delay.c
+      Source file:   CMSIS/RTOS2/RTX/Source/rtx_timer.c
+      Source file:   CMSIS/RTOS2/RTX/Source/rtx_evflags.c
+      Source file:   CMSIS/RTOS2/RTX/Source/rtx_mutex.c
+      Source file:   CMSIS/RTOS2/RTX/Source/rtx_semaphore.c
+      Source file:   CMSIS/RTOS2/RTX/Source/rtx_memory.c
+      Source file:   CMSIS/RTOS2/RTX/Source/rtx_thread.c
+      Source file:   CMSIS/RTOS2/RTX/Source/rtx_kernel.c
+
+   * Component: Keil.ARM Compiler::Compiler:Event Recorder:DAP:1.5.1
+      Source file:   Source/EventRecorder.c
+      Include file:  Config/EventRecorderConf.h
+      Include file:  Include/EventRecorder.h
+
+   * Component: Keil.STM32H743I-EVAL::Board Support:Buttons:1.1.0
+      Source file:   MDK/Boards/ST/STM32H743I_EVAL/Common/Buttons_743I_EVAL.c
+
+   * Component: Keil.STM32H743I-EVAL::Board Support:Drivers:BUS:1.1.0
+      Include file:  Drivers/BSP/STM32H743I-EVAL/stm32h743i_eval_bus.h
+      Source file:   Drivers/BSP/STM32H743I-EVAL/stm32h743i_eval_bus.c
+
+   * Component: Keil.STM32H743I-EVAL::Board Support:Drivers:Basic I/O:1.1.0
+      Include file:  Drivers/BSP/STM32H743I-EVAL/stm32h743i_eval.h
+      Source file:   Drivers/BSP/STM32H743I-EVAL/stm32h743i_eval.c
+      Include file:  MDK/Boards/ST/STM32H743I_EVAL/ConfigTemplate/stm32h743i_eval_conf.h
+
+   * Component: Keil.STM32H743I-EVAL::Board Support:Drivers:I/O:1.1.0
+      Source file:   Drivers/BSP/Components/mfxstm32l152/mfxstm32l152.c
+      Source file:   Drivers/BSP/STM32H743I-EVAL/stm32h743i_eval_io.c
+      Source file:   Drivers/BSP/Components/mfxstm32l152/mfxstm32l152_reg.c
+      Include file:  Drivers/BSP/STM32H743I-EVAL/stm32h743i_eval_io.h
+
+   * Component: Keil.STM32H743I-EVAL::Board Support:LED:1.1.0
+      Source file:   MDK/Boards/ST/STM32H743I_EVAL/Common/LED_743I_EVAL.c
+
+   * Component: Keil::Device:STM32Cube Framework:STM32CubeMX:2.0.0
+      Source file:   STCubeGenerated/Src/stm32h7xx_hal_msp.c
+      Include file:  MX_Device.h
+      Include file:  STCubeGenerated/Inc/stm32h7xx_hal_conf.h
+
+   * Component: Keil::Device:STM32Cube HAL:ADC:1.9.0
+      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c
+      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:Common:1.9.0
+      Include file:  Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h
+      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c
+
+   * Component: Keil::Device:STM32Cube HAL:Cortex:1.9.0
+      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c
+
+   * Component: Keil::Device:STM32Cube HAL:DMA:1.9.0
+      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c
+      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c
+
+   * Component: Keil::Device:STM32Cube HAL:EXTI:1.9.0
+      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c
+
+   * Component: Keil::Device:STM32Cube HAL:GPIO:1.9.0
+      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c
+
+   * Component: Keil::Device:STM32Cube HAL:I2C:1.9.0
+      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c
+      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c
+
+   * Component: Keil::Device:STM32Cube HAL:LTDC:1.9.0
+      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c
+      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:MDMA:1.9.0
+      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c
+
+   * Component: Keil::Device:STM32Cube HAL:PWR:1.9.0
+      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c
+      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c
+
+   * Component: Keil::Device:STM32Cube HAL:RCC:1.9.0
+      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c
+      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c
+
+   * Component: Keil::Device:STM32Cube HAL:SDRAM:1.9.0
+      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c
+      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c
+
+   * Component: Keil::Device:STM32Cube HAL:UART:1.9.0
+      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c
+      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c
+
+   * Component: Keil::Device:Startup:1.9.0
+      Source file:   Drivers/CMSIS/Device/ST/STM32H7xx/Source/Templates/system_stm32h7xx.c
+      Include file:  Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h
+      Source file:   Drivers/CMSIS/Device/ST/STM32H7xx/Source/Templates/arm/startup_stm32h743xx.s
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>
