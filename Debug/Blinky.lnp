@@ -50,6 +50,8 @@
 ".\debug\stm32h7xx_hal_msp.o"
 ".\debug\startup_stm32h743xx.o"
 ".\debug\system_stm32h7xx.o"
+".\debug\stm32h7xx_hal_spi.o"
+".\debug\stm32h7xx_hal_spi_ex.o"
 --strict --scatter ".\stm32h743.sct"
 --diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
