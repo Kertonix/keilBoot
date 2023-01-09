@@ -1,6 +1,6 @@
 Dependencies for Project 'Blinky', Target 'Debug': (DO NOT MODIFY !)
 CompilerVersion: 6180000::V6.18::ARMCLANG
-F (.\Blinky.c)(0x63875D80)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/blinky.o -MD)
+F (.\Blinky.c)(0x638DC35C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/blinky.o -MD)
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x626F9F3E)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6252B538)
@@ -8,7 +8,7 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6252B536)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.15.0\Board\Board_LED.h)(0x5D1455AA)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.15.0\Board\Board_Buttons.h)(0x5D1455AA)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -42,14 +42,16 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 F (.\Abstract.txt)(0x5CFF4F90)()
-F (.\STM32CubeMX\STCubeGenerated\Src\main.c)(0x63875DEF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/main.o -MD)
+F (.\STM32CubeMX\STCubeGenerated\Src\main.c)(0x63BC8E0C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/main.o -MD)
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
-I (STM32CubeMX\STCubeGenerated\Inc\main.h)(0x63875CCA)
+I (STM32CubeMX\STCubeGenerated\Inc\main.h)(0x63BC8E2B)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -85,15 +87,17 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x626F9F3E)
 F (.\STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_it.h)(0x62189990)()
-F (.\STM32CubeMX\STCubeGenerated\Src\stm32h7xx_it.c)(0x62189990)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/stm32h7xx_it.o -MD)
+F (.\STM32CubeMX\STCubeGenerated\Src\stm32h7xx_it.c)(0x63BC8CA5)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/stm32h7xx_it.o -MD)
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
-I (STM32CubeMX\STCubeGenerated\Inc\main.h)(0x63875CCA)
+I (STM32CubeMX\STCubeGenerated\Inc\main.h)(0x63BC8E2B)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -129,6 +133,8 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x626F9F3E)
@@ -148,7 +154,7 @@ I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\BSP\STM32H743I-EVAL\stm32h743i_eval.h)(0x60658432)
 I (RTE\Board_Support\STM32H743XIHx\stm32h743i_eval_conf.h)(0x5E312540)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -184,6 +190,8 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\BSP\STM32H743I-EVAL\stm32h743i_eval_errno.h)(0x60658432)
@@ -196,7 +204,7 @@ I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\BSP\STM32H743I-EVAL\stm32h743i_eval_bus.h)(0x60658432)
 I (RTE\Board_Support\STM32H743XIHx\stm32h743i_eval_conf.h)(0x5E312540)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -232,6 +240,8 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\BSP\STM32H743I-EVAL\stm32h743i_eval_errno.h)(0x60658432)
@@ -240,7 +250,7 @@ I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\BSP\STM32H743I-EVAL\stm32h743i_eval_io.h)(0x5E312540)
 I (RTE\Board_Support\STM32H743XIHx\stm32h743i_eval_conf.h)(0x5E312540)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -276,6 +286,8 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\BSP\STM32H743I-EVAL\stm32h743i_eval_errno.h)(0x60658432)
@@ -286,7 +298,7 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\BSP\S
 F (C:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/MDK/Boards/ST/STM32H743I_EVAL/Common/Buttons_743I_EVAL.c)(0x58AE8CFE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/buttons_743i_eval.o -MD)
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -322,13 +334,15 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.15.0\Board\Board_Buttons.h)(0x5D1455AA)
 F (C:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/MDK/Boards/ST/STM32H743I_EVAL/Common/LED_743I_EVAL.c)(0x5E312540)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/led_743i_eval.o -MD)
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -364,6 +378,8 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\BSP\STM32H743I-EVAL\stm32h743i_eval.h)(0x60658432)
@@ -377,7 +393,7 @@ I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_lib.h)(0x626F9F3E)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x6252B536)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Include\rtx_def.h)(0x626F9F3E)
-I (RTE\_Debug\RTE_Components.h)(0x636CFD48)
+I (RTE\_Debug\RTE_Components.h)(0x63BC8CAF)
 I (RTE\CMSIS\RTX_Config.h)(0x60DB1FB0)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_core_c.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -391,7 +407,7 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cachel1_armv7.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x60658432)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6065843C)
@@ -417,6 +433,8 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_core_cm.h)(0x626F9F3E)
@@ -432,7 +450,7 @@ I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_lib.h)(0x626F9F3E)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x6252B536)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Include\rtx_def.h)(0x626F9F3E)
-I (RTE\_Debug\RTE_Components.h)(0x636CFD48)
+I (RTE\_Debug\RTE_Components.h)(0x63BC8CAF)
 I (RTE\CMSIS\RTX_Config.h)(0x60DB1FB0)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_core_c.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -446,7 +464,7 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cachel1_armv7.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x60658432)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6065843C)
@@ -472,6 +490,8 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_core_cm.h)(0x626F9F3E)
@@ -493,7 +513,7 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Includ
 I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6252B536)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Include\rtx_def.h)(0x626F9F3E)
-I (RTE\_Debug\RTE_Components.h)(0x636CFD48)
+I (RTE\_Debug\RTE_Components.h)(0x63BC8CAF)
 I (RTE\CMSIS\RTX_Config.h)(0x60DB1FB0)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include\EventRecorder.h)(0x5B8FA4DE)
 I (RTE\Compiler\EventRecorderConf.h)(0x5CFF4F90)
@@ -502,7 +522,7 @@ I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_lib.h)(0x626F9F3E)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x6252B536)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Include\rtx_def.h)(0x626F9F3E)
-I (RTE\_Debug\RTE_Components.h)(0x636CFD48)
+I (RTE\_Debug\RTE_Components.h)(0x63BC8CAF)
 I (RTE\CMSIS\RTX_Config.h)(0x60DB1FB0)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_core_c.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -516,7 +536,7 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cachel1_armv7.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x60658432)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6065843C)
@@ -542,6 +562,8 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_core_cm.h)(0x626F9F3E)
@@ -559,7 +581,7 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6252B538)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6252B536)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Include\rtx_def.h)(0x626F9F3E)
-I (RTE\_Debug\RTE_Components.h)(0x636CFD48)
+I (RTE\_Debug\RTE_Components.h)(0x63BC8CAF)
 I (RTE\CMSIS\RTX_Config.h)(0x60DB1FB0)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h743xx.h)(0x60658432)
@@ -571,7 +593,7 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cachel1_armv7.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x60658432)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6065843C)
@@ -596,6 +618,8 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include\EventRecorder.h)(0x5B8FA4DE)
@@ -606,7 +630,7 @@ I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_lib.h)(0x626F9F3E)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x6252B536)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Include\rtx_def.h)(0x626F9F3E)
-I (RTE\_Debug\RTE_Components.h)(0x636CFD48)
+I (RTE\_Debug\RTE_Components.h)(0x63BC8CAF)
 I (RTE\CMSIS\RTX_Config.h)(0x60DB1FB0)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_core_c.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -620,7 +644,7 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cachel1_armv7.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x60658432)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6065843C)
@@ -646,6 +670,8 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_core_cm.h)(0x626F9F3E)
@@ -661,7 +687,7 @@ I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_lib.h)(0x626F9F3E)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x6252B536)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Include\rtx_def.h)(0x626F9F3E)
-I (RTE\_Debug\RTE_Components.h)(0x636CFD48)
+I (RTE\_Debug\RTE_Components.h)(0x63BC8CAF)
 I (RTE\CMSIS\RTX_Config.h)(0x60DB1FB0)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_core_c.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -675,7 +701,7 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cachel1_armv7.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x60658432)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6065843C)
@@ -701,6 +727,8 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_core_cm.h)(0x626F9F3E)
@@ -716,7 +744,7 @@ I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_lib.h)(0x626F9F3E)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x6252B536)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Include\rtx_def.h)(0x626F9F3E)
-I (RTE\_Debug\RTE_Components.h)(0x636CFD48)
+I (RTE\_Debug\RTE_Components.h)(0x63BC8CAF)
 I (RTE\CMSIS\RTX_Config.h)(0x60DB1FB0)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_core_c.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -730,7 +758,7 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cachel1_armv7.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x60658432)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6065843C)
@@ -756,6 +784,8 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_core_cm.h)(0x626F9F3E)
@@ -771,7 +801,7 @@ I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_lib.h)(0x626F9F3E)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x6252B536)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Include\rtx_def.h)(0x626F9F3E)
-I (RTE\_Debug\RTE_Components.h)(0x636CFD48)
+I (RTE\_Debug\RTE_Components.h)(0x63BC8CAF)
 I (RTE\CMSIS\RTX_Config.h)(0x60DB1FB0)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_core_c.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -785,7 +815,7 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cachel1_armv7.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x60658432)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6065843C)
@@ -811,6 +841,8 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_core_cm.h)(0x626F9F3E)
@@ -826,7 +858,7 @@ I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_lib.h)(0x626F9F3E)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x6252B536)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Include\rtx_def.h)(0x626F9F3E)
-I (RTE\_Debug\RTE_Components.h)(0x636CFD48)
+I (RTE\_Debug\RTE_Components.h)(0x63BC8CAF)
 I (RTE\CMSIS\RTX_Config.h)(0x60DB1FB0)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_core_c.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -840,7 +872,7 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cachel1_armv7.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x60658432)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6065843C)
@@ -866,6 +898,8 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_core_cm.h)(0x626F9F3E)
@@ -881,7 +915,7 @@ I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_lib.h)(0x626F9F3E)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x6252B536)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Include\rtx_def.h)(0x626F9F3E)
-I (RTE\_Debug\RTE_Components.h)(0x636CFD48)
+I (RTE\_Debug\RTE_Components.h)(0x63BC8CAF)
 I (RTE\CMSIS\RTX_Config.h)(0x60DB1FB0)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_core_c.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -895,7 +929,7 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cachel1_armv7.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x60658432)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6065843C)
@@ -921,6 +955,8 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_core_cm.h)(0x626F9F3E)
@@ -936,7 +972,7 @@ I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_lib.h)(0x626F9F3E)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x6252B536)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Include\rtx_def.h)(0x626F9F3E)
-I (RTE\_Debug\RTE_Components.h)(0x636CFD48)
+I (RTE\_Debug\RTE_Components.h)(0x63BC8CAF)
 I (RTE\CMSIS\RTX_Config.h)(0x60DB1FB0)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_core_c.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -950,7 +986,7 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cachel1_armv7.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x60658432)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6065843C)
@@ -976,6 +1012,8 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_core_cm.h)(0x626F9F3E)
@@ -991,7 +1029,7 @@ I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_lib.h)(0x626F9F3E)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x6252B536)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Include\rtx_def.h)(0x626F9F3E)
-I (RTE\_Debug\RTE_Components.h)(0x636CFD48)
+I (RTE\_Debug\RTE_Components.h)(0x63BC8CAF)
 I (RTE\CMSIS\RTX_Config.h)(0x60DB1FB0)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_core_c.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -1005,7 +1043,7 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cachel1_armv7.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x60658432)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6065843C)
@@ -1031,6 +1069,8 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Source\rtx_core_cm.h)(0x626F9F3E)
@@ -1045,7 +1085,7 @@ F (C:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Source/os_
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\Include\os_tick.h)(0x626F9F3E)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6252B538)
-I (RTE\_Debug\RTE_Components.h)(0x636CFD48)
+I (RTE\_Debug\RTE_Components.h)(0x63BC8CAF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h743xx.h)(0x60658432)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm7.h)(0x626F9F3E)
@@ -1056,7 +1096,7 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cachel1_armv7.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x60658432)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6065843C)
@@ -1082,6 +1122,8 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 F (RTE/CMSIS/RTX_Config.c)(0x60DB1FB0)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/rtx_config.o -MD)
@@ -1093,13 +1135,13 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Includ
 I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x6252B536)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\Include\rtx_def.h)(0x626F9F3E)
-I (RTE\_Debug\RTE_Components.h)(0x636CFD48)
+I (RTE\_Debug\RTE_Components.h)(0x63BC8CAF)
 I (RTE\CMSIS\RTX_Config.h)(0x60DB1FB0)
 F (RTE/CMSIS/RTX_Config.h)(0x60DB1FB0)()
 F (C:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Library/ARM/RTX_CM4F.lib)(0x626F9F3E)()
 F (C:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Source/EventRecorder.c)(0x62429EA4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/eventrecorder.o -MD)
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
-I (RTE\_Debug\RTE_Components.h)(0x636CFD48)
+I (RTE\_Debug\RTE_Components.h)(0x63BC8CAF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h743xx.h)(0x60658432)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm7.h)(0x626F9F3E)
@@ -1111,7 +1153,7 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cachel1_armv7.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x60658432)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6065843C)
@@ -1137,6 +1179,8 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x6252B536)
@@ -1146,7 +1190,7 @@ F (RTE/Compiler/EventRecorderConf.h)(0x5CFF4F90)()
 F (C:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c)(0x6065843C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/stm32h7xx_hal.o -MD)
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -1182,12 +1226,14 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 F (C:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c)(0x6065843C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/stm32h7xx_hal_adc.o -MD)
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -1223,12 +1269,14 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 F (C:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c)(0x6065843C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/stm32h7xx_hal_adc_ex.o -MD)
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -1264,12 +1312,14 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 F (C:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c)(0x6065843C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/stm32h7xx_hal_cortex.o -MD)
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -1305,12 +1355,14 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 F (C:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c)(0x6065843C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/stm32h7xx_hal_dma.o -MD)
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -1346,12 +1398,14 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 F (C:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c)(0x6065843C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/stm32h7xx_hal_dma_ex.o -MD)
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -1387,12 +1441,14 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 F (C:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c)(0x6065843E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/stm32h7xx_hal_exti.o -MD)
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -1428,12 +1484,14 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 F (C:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c)(0x6065843E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/stm32h7xx_hal_gpio.o -MD)
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -1469,12 +1527,14 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 F (C:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c)(0x6065843E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/stm32h7xx_hal_i2c.o -MD)
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -1510,12 +1570,14 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 F (C:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c)(0x6065843E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/stm32h7xx_hal_i2c_ex.o -MD)
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -1551,12 +1613,14 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 F (C:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c)(0x6065843E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/stm32h7xx_hal_ltdc.o -MD)
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -1592,12 +1656,14 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 F (C:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c)(0x6065843E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/stm32h7xx_hal_ltdc_ex.o -MD)
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -1633,12 +1699,14 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 F (C:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c)(0x6065843E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/stm32h7xx_hal_mdma.o -MD)
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -1674,12 +1742,14 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 F (C:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c)(0x6065843E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/stm32h7xx_hal_pwr.o -MD)
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -1715,12 +1785,14 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 F (C:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c)(0x6065843E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/stm32h7xx_hal_pwr_ex.o -MD)
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -1756,12 +1828,14 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 F (C:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c)(0x6065843E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/stm32h7xx_hal_rcc.o -MD)
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -1797,12 +1871,14 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 F (C:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c)(0x6065843E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/stm32h7xx_hal_rcc_ex.o -MD)
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -1838,12 +1914,14 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 F (C:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c)(0x6065843E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/stm32h7xx_hal_sdram.o -MD)
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -1879,12 +1957,14 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 F (C:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c)(0x6065843E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/stm32h7xx_hal_uart.o -MD)
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -1920,12 +2000,14 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 F (C:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c)(0x6065843E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/stm32h7xx_hal_uart_ex.o -MD)
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -1961,12 +2043,14 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 F (C:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c)(0x6065843E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/stm32h7xx_ll_fmc.o -MD)
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -2002,13 +2086,15 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
-F (C:/Users/p1991/OneDrive - Wojskowa Akademia Techniczna/WAT Elektronika i Telekomunikacja 2 stopien/Praca Magisterska/blinkyKeil/MDK/Boards/ST/STM32H743I_EVAL/Blinky/STM32CubeMX/STCubeGenerated/Src/stm32h7xx_hal_msp.c)(0x62189990)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/stm32h7xx_hal_msp.o -MD)
+F (C:/Users/p1991/OneDrive - Wojskowa Akademia Techniczna/WAT Elektronika i Telekomunikacja 2 stopien/Praca Magisterska/blinkyKeil/MDK/Boards/ST/STM32H743I_EVAL/Blinky/STM32CubeMX/STCubeGenerated/Src/stm32h7xx_hal_msp.c)(0x63BC8CA5)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__RTX -D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Board_Support/STM32H743XIHx-I./RTE/CMSIS-I./RTE/Compiler-I./RTE/_Debug-I./STM32CubeMX-I./STM32CubeMX/STCubeGenerated-I./STM32CubeMX/STCubeGenerated/Inc-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS2/RTX/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.15.0/Board-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/BSP/STM32H743I-EVAL-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-IC:/Users/p1991/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/STM32H7xx_HAL_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DSTM32H743xx -D_RTE_  -include "Pre_Include_Global.h"-o ./debug/stm32h7xx_hal_msp.o -MD)
 I (RTE\_Debug\Pre_Include_Global.h)(0x636CFD48)
-I (STM32CubeMX\STCubeGenerated\Inc\main.h)(0x63875CCA)
+I (STM32CubeMX\STCubeGenerated\Inc\main.h)(0x63BC8E2B)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x60658432)
@@ -2044,6 +2130,8 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x626F9F3E)
@@ -2061,7 +2149,7 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu
 I (C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cachel1_armv7.h)(0x626F9F3E)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x60658432)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6065843C)
-I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x62189990)
+I (STM32CubeMX\STCubeGenerated\Inc\stm32h7xx_hal_conf.h)(0x63BC8AFF)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x5CF7A716)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6065843C)
@@ -2087,5 +2175,7 @@ I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h)(0x6065843C)
+I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6065843C)
 I (C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6065843C)

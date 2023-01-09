@@ -3,7 +3,7 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: µVision V5.37.0.0
+IDE-Version: ÂµVision V5.37.0.0
 Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
 License Information: Mateusz Ryba, rybka, LIC=----
  
@@ -22,15 +22,16 @@ Dialog DLL:      TCM.DLL V1.56.1.0
  
 <h2>Project:</h2>
 C:\Users\p1991\OneDrive - Wojskowa Akademia Techniczna\WAT Elektronika i Telekomunikacja 2 stopien\Praca Magisterska\blinkyKeil\MDK\Boards\ST\STM32H743I_EVAL\Blinky\Blinky.uvprojx
-Project File Date:  11/22/2022
+Project File Date:  01/09/2023
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.18', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Build target 'Debug'
-compiling Blinky.c...
+compiling stm32h7xx_it.c...
 compiling main.c...
+compiling stm32h7xx_hal_msp.c...
 linking...
-Program Size: Code=21396 RO-data=1052 RW-data=180 ZI-data=8872  
+Program Size: Code=18112 RO-data=1052 RW-data=180 ZI-data=8872  
 ".\Debug\Blinky.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
@@ -120,32 +121,32 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.6.0
 
    * Component: ARM::CMSIS:RTOS2:Keil RTX5:Source:5.5.4
-      Source file:   CMSIS/RTOS2/Source/os_systick.c
-      Source file:   CMSIS/RTOS2/RTX/Source/rtx_lib.c
-      Source file:   CMSIS/RTOS2/RTX/Source/rtx_msgqueue.c
-      Source file:   CMSIS/RTOS2/RTX/Source/rtx_evr.c
       Source file:   CMSIS/RTOS2/RTX/Source/GCC/irq_armv7m.S
+      Source file:   CMSIS/RTOS2/RTX/Source/rtx_msgqueue.c
       Source file:   CMSIS/RTOS2/RTX/Source/rtx_system.c
+      Source file:   CMSIS/RTOS2/RTX/Source/rtx_lib.c
+      Source file:   CMSIS/RTOS2/RTX/Source/rtx_memory.c
+      Source file:   CMSIS/RTOS2/RTX/Source/rtx_evr.c
+      Source file:   CMSIS/RTOS2/Source/os_systick.c
       Source file:   CMSIS/RTOS2/RTX/Source/rtx_mempool.c
-      Source file:   CMSIS/RTOS2/RTX/Template/main.c
-      Source file:   CMSIS/RTOS2/RTX/Template/Semaphore.c
-      Source file:   CMSIS/RTOS2/RTX/Template/Timer.c
-      Source file:   CMSIS/RTOS2/RTX/Template/svc_user.c
-      Include file:  CMSIS/RTOS2/RTX/Config/RTX_Config.h
       Source file:   CMSIS/RTOS2/RTX/Template/Events.c
-      Source file:   CMSIS/RTOS2/RTX/Config/RTX_Config.c
-      Source file:   CMSIS/RTOS2/RTX/Template/MemPool.c
-      Source file:   CMSIS/RTOS2/RTX/Template/MsgQueue.c
-      Source file:   CMSIS/RTOS2/RTX/Template/Mutex.c
-      Source file:   CMSIS/RTOS2/RTX/Template/Thread.c
+      Source file:   CMSIS/RTOS2/RTX/Template/svc_user.c
       Include file:  CMSIS/RTOS2/RTX/Include/rtx_os.h
+      Include file:  CMSIS/RTOS2/RTX/Config/RTX_Config.h
+      Source file:   CMSIS/RTOS2/RTX/Template/MsgQueue.c
+      Source file:   CMSIS/RTOS2/RTX/Template/main.c
+      Source file:   CMSIS/RTOS2/RTX/Template/MemPool.c
+      Source file:   CMSIS/RTOS2/RTX/Template/Timer.c
+      Source file:   CMSIS/RTOS2/RTX/Template/Semaphore.c
+      Source file:   CMSIS/RTOS2/RTX/Config/RTX_Config.c
+      Source file:   CMSIS/RTOS2/RTX/Template/Thread.c
+      Source file:   CMSIS/RTOS2/RTX/Template/Mutex.c
       Source file:   CMSIS/RTOS2/RTX/Source/rtx_delay.c
-      Source file:   CMSIS/RTOS2/RTX/Source/rtx_timer.c
-      Source file:   CMSIS/RTOS2/RTX/Source/rtx_evflags.c
+      Source file:   CMSIS/RTOS2/RTX/Source/rtx_thread.c
       Source file:   CMSIS/RTOS2/RTX/Source/rtx_mutex.c
       Source file:   CMSIS/RTOS2/RTX/Source/rtx_semaphore.c
-      Source file:   CMSIS/RTOS2/RTX/Source/rtx_memory.c
-      Source file:   CMSIS/RTOS2/RTX/Source/rtx_thread.c
+      Source file:   CMSIS/RTOS2/RTX/Source/rtx_timer.c
+      Source file:   CMSIS/RTOS2/RTX/Source/rtx_evflags.c
       Source file:   CMSIS/RTOS2/RTX/Source/rtx_kernel.c
 
    * Component: Keil.ARM Compiler::Compiler:Event Recorder:DAP:1.5.1
@@ -162,26 +163,26 @@ Package Vendor: Keil
 
    * Component: Keil.STM32H743I-EVAL::Board Support:Drivers:Basic I/O:1.1.0
       Include file:  Drivers/BSP/STM32H743I-EVAL/stm32h743i_eval.h
-      Source file:   Drivers/BSP/STM32H743I-EVAL/stm32h743i_eval.c
       Include file:  MDK/Boards/ST/STM32H743I_EVAL/ConfigTemplate/stm32h743i_eval_conf.h
+      Source file:   Drivers/BSP/STM32H743I-EVAL/stm32h743i_eval.c
 
    * Component: Keil.STM32H743I-EVAL::Board Support:Drivers:I/O:1.1.0
-      Source file:   Drivers/BSP/Components/mfxstm32l152/mfxstm32l152.c
-      Source file:   Drivers/BSP/STM32H743I-EVAL/stm32h743i_eval_io.c
       Source file:   Drivers/BSP/Components/mfxstm32l152/mfxstm32l152_reg.c
       Include file:  Drivers/BSP/STM32H743I-EVAL/stm32h743i_eval_io.h
+      Source file:   Drivers/BSP/Components/mfxstm32l152/mfxstm32l152.c
+      Source file:   Drivers/BSP/STM32H743I-EVAL/stm32h743i_eval_io.c
 
    * Component: Keil.STM32H743I-EVAL::Board Support:LED:1.1.0
       Source file:   MDK/Boards/ST/STM32H743I_EVAL/Common/LED_743I_EVAL.c
 
    * Component: Keil::Device:STM32Cube Framework:STM32CubeMX:2.0.0
-      Source file:   STCubeGenerated/Src/stm32h7xx_hal_msp.c
-      Include file:  MX_Device.h
       Include file:  STCubeGenerated/Inc/stm32h7xx_hal_conf.h
+      Include file:  MX_Device.h
+      Source file:   STCubeGenerated/Src/stm32h7xx_hal_msp.c
 
    * Component: Keil::Device:STM32Cube HAL:ADC:1.9.0
-      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c
       Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c
+      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c
 
    * Component: Keil::Device:STM32Cube HAL:Common:1.9.0
       Include file:  Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h
@@ -191,8 +192,8 @@ Package Vendor: Keil
       Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c
 
    * Component: Keil::Device:STM32Cube HAL:DMA:1.9.0
-      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c
       Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c
+      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c
 
    * Component: Keil::Device:STM32Cube HAL:EXTI:1.9.0
       Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c
@@ -201,12 +202,12 @@ Package Vendor: Keil
       Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c
 
    * Component: Keil::Device:STM32Cube HAL:I2C:1.9.0
-      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c
       Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c
+      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c
 
    * Component: Keil::Device:STM32Cube HAL:LTDC:1.9.0
-      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c
       Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c
+      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c
 
    * Component: Keil::Device:STM32Cube HAL:MDMA:1.9.0
       Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c
@@ -216,8 +217,8 @@ Package Vendor: Keil
       Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c
 
    * Component: Keil::Device:STM32Cube HAL:RCC:1.9.0
-      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c
       Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c
+      Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c
 
    * Component: Keil::Device:STM32Cube HAL:SDRAM:1.9.0
       Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c
@@ -228,10 +229,10 @@ Package Vendor: Keil
       Source file:   Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c
 
    * Component: Keil::Device:Startup:1.9.0
-      Source file:   Drivers/CMSIS/Device/ST/STM32H7xx/Source/Templates/system_stm32h7xx.c
-      Include file:  Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h
       Source file:   Drivers/CMSIS/Device/ST/STM32H7xx/Source/Templates/arm/startup_stm32h743xx.s
-Build Time Elapsed:  00:00:01
+      Include file:  Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h
+      Source file:   Drivers/CMSIS/Device/ST/STM32H7xx/Source/Templates/system_stm32h7xx.c
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>
