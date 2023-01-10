@@ -38,9 +38,7 @@
   C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_i2c_ex.h \
   C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr.h \
   C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h \
-  C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h \
-  C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h \
   C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h \
   C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h \
-  C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h \
-  C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h
+  C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim.h \
+  C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim_ex.h

@@ -36,7 +36,11 @@
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
-
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
+	if(GPIO_Pin == B1_Pin){
+		HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin, HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin));
+	}
+}
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
@@ -50,14 +54,15 @@ SPI_HandleTypeDef hspi3;
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
-void PeriphCommonClock_Config(void);
 static void MX_GPIO_Init(void);
-static void MX_ADC1_Init(void);
+static void MX_ADC3_Init(void);
+static void MX_SPI3_Init(void);
 /* USER CODE BEGIN PFP */
 void StartDefaultTask (void *argument) {
   for(;;)
   {
 		HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+		//HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
 	}
 }
 /* USER CODE END PFP */
@@ -85,15 +90,6 @@ uint32_t HAL_GetTick (void) {
   return ++ticks;
 }
 
-/**
-  * Override default HAL_InitTick function
-  */
-HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority) {
-  
-  UNUSED(TickPriority);
-
-  return HAL_OK;
-}
 /* USER CODE END 0 */
 
 /**
@@ -106,6 +102,8 @@ int main(void)
 
   /* USER CODE END 1 */
 
+  /* MCU Configuration--------------------------------------------------------*/
+
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
 
@@ -117,11 +115,12 @@ int main(void)
   SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
-  SystemCoreClockUpdate();
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_ADC3_Init();
+  MX_SPI3_Init();
   /* USER CODE BEGIN 2 */
   HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
   HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
@@ -431,7 +430,26 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE END 4 */
 
-/* MPU Configuration */
+/**
+  * @brief  Period elapsed callback in non blocking mode
+  * @note   This function is called  when TIM7 interrupt took place, inside
+  * HAL_TIM_IRQHandler(). It makes a direct call to HAL_IncTick() to increment
+  * a global variable "uwTick" used as application time base.
+  * @param  htim : TIM handle
+  * @retval None
+  */
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+  /* USER CODE BEGIN Callback 0 */
+
+  /* USER CODE END Callback 0 */
+  if (htim->Instance == TIM7) {
+    HAL_IncTick();
+  }
+  /* USER CODE BEGIN Callback 1 */
+
+  /* USER CODE END Callback 1 */
+}
 
 /**
   * @brief  This function is executed in case of error occurrence.
@@ -463,4 +481,3 @@ void assert_failed(uint8_t *file, uint32_t line)
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
-
