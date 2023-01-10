@@ -22,7 +22,9 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include <stdio.h>
-
+//#include <queue.h>
+//#include <arm_math.h>
+//#include "OLED/test.h"
 
 #define RTOS 1 		// 1-FreeRTOS, 2-Keil RTX 5
 #define BOOT_TEST 1
@@ -208,13 +210,13 @@ int main(void)
   defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
 
   /* creation of ADC */
-  ADCHandle = osThreadNew(StartADC, NULL, &ADC_attributes);
-
-  /* creation of Display */
-  DisplayHandle = osThreadNew(StartDisplay, NULL, &Display_attributes);
-
-  /* creation of FFT */
-  FFTHandle = osThreadNew(StartFFT, NULL, &FFT_attributes);
+//  ADCHandle = osThreadNew(StartADC, NULL, &ADC_attributes);
+//
+//  /* creation of Display */
+//  DisplayHandle = osThreadNew(StartDisplay, NULL, &Display_attributes);
+//
+//  /* creation of FFT */
+//  FFTHandle = osThreadNew(StartFFT, NULL, &FFT_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
 	/* add threads, ... */
@@ -535,7 +537,7 @@ void StartDefaultTask(void *argument)
 	for (;;) {
 #if (BOOT_TEST == 1)
 		HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
-		//vTaskDelete(NULL);
+//		vTaskDelete(NULL);
 #else
 		HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
 #endif
@@ -571,7 +573,7 @@ void StartADC(void *argument)
 		}
 	}
 #else
-	//vTaskDelete(NULL);
+//	vTaskDelete(NULL);
 #endif
   /* USER CODE END StartADC */
 }
@@ -602,7 +604,7 @@ void StartDisplay(void *argument)
 #endif
 	}
 #else
-		//vTaskDelete(NULL);
+//		vTaskDelete(NULL);
 #endif
   /* USER CODE END StartDisplay */
 }

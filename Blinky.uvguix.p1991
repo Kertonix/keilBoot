@@ -3613,9 +3613,9 @@
       <ActiveTab>0</ActiveTab>
       <Doc>
         <Name>.\STM32CubeMX\STCubeGenerated\Src\main.c</Name>
-        <ColumnNumber>0</ColumnNumber>
-        <TopLine>20</TopLine>
-        <CurrentLine>25</CurrentLine>
+        <ColumnNumber>4</ColumnNumber>
+        <TopLine>627</TopLine>
+        <CurrentLine>656</CurrentLine>
         <Folding>1</Folding>
         <ContractedFolders></ContractedFolders>
         <PaneID>0</PaneID>
