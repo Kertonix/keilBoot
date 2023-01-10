@@ -27,7 +27,7 @@
 //#include "OLED/test.h"
 
 #define RTOS 1 		// 1-FreeRTOS, 2-Keil RTX 5
-#define BOOT_TEST 1
+#define BOOT_TEST 0
 #define TEMP 0
 #define FFT 0
 #define DISPLAY 0	// 0-off, 1-display 0_95in, 2-display 0_96in
@@ -68,8 +68,8 @@ SPI_HandleTypeDef hspi3;
 osThreadId_t defaultTaskHandle;
 const osThreadAttr_t defaultTask_attributes = {
   .name = "defaultTask",
-  .stack_size = 128 * 4,
-  .priority = (osPriority_t) osPriorityNormal,
+	.stack_size = 128 * 4,
+	.priority = (osPriority_t) osPriorityNormal,
 };
 /* Definitions for ADC */
 osThreadId_t ADCHandle;
@@ -207,7 +207,7 @@ int main(void)
 
   /* Create the thread(s) */
   /* creation of defaultTask */
-  defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
+  osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
 
   /* creation of ADC */
 //  ADCHandle = osThreadNew(StartADC, NULL, &ADC_attributes);
