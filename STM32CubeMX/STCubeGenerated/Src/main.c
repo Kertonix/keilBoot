@@ -1,28 +1,35 @@
 /* USER CODE BEGIN Header */
 /**
-  ******************************************************************************
-  * @file           : main.c
-  * @brief          : Main program body
-  ******************************************************************************
-  * @attention
-  *
-  * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
-  * All rights reserved.</center></h2>
-  *
-  * This software component is licensed by ST under BSD 3-Clause license,
-  * the "License"; You may not use this file except in compliance with the
-  * License. You may obtain a copy of the License at:
-  *                        opensource.org/licenses/BSD-3-Clause
-  *
-  ******************************************************************************
-  */
+ ******************************************************************************
+ * @file           : main.c
+ * @brief          : Main program body
+ ******************************************************************************
+ * @attention
+ *
+ * Copyright (c) 2022 STMicroelectronics.
+ * All rights reserved.
+ *
+ * This software is licensed under terms that can be found in the LICENSE file
+ * in the root directory of this software component.
+ * If no LICENSE file comes with this software, it is provided AS-IS.
+ *
+ ******************************************************************************
+ */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include <stdio.h>
 
+
+#define RTOS 1 		// 1-FreeRTOS, 2-Keil RTX 5
+#define BOOT_TEST 1
+#define TEMP 0
+#define FFT 0
+#define DISPLAY 0	// 0-off, 1-display 0_95in, 2-display 0_96in
+#define QUEUES 0
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -32,15 +39,22 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+#define SAMPLE_BUFFER_LENGTH        4096
+#define SAMPLE_BUFFER_LENGTH_HALF   (SAMPLE_BUFFER_LENGTH/2)
+#define SAMPLING_RATE               48000
+
+float fft_input[SAMPLE_BUFFER_LENGTH];
+float fft_output[SAMPLE_BUFFER_LENGTH];
+float fft_power[SAMPLE_BUFFER_LENGTH_HALF];
+
+uint8_t ifftFlag = 0;
+float frequency_resolution = (float) SAMPLING_RATE
+		/ (float) SAMPLE_BUFFER_LENGTH;
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
-void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
-	if(GPIO_Pin == B1_Pin){
-		HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin, HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin));
-	}
-}
+
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
@@ -48,6 +62,44 @@ ADC_HandleTypeDef hadc3;
 
 SPI_HandleTypeDef hspi3;
 
+/* Definitions for defaultTask */
+osThreadId_t defaultTaskHandle;
+const osThreadAttr_t defaultTask_attributes = {
+  .name = "defaultTask",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityNormal,
+};
+/* Definitions for ADC */
+osThreadId_t ADCHandle;
+const osThreadAttr_t ADC_attributes = {
+  .name = "ADC",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityNormal,
+};
+/* Definitions for Display */
+osThreadId_t DisplayHandle;
+const osThreadAttr_t Display_attributes = {
+  .name = "Display",
+  .stack_size = 256 * 4,
+  .priority = (osPriority_t) osPriorityNormal,
+};
+/* Definitions for FFT */
+osThreadId_t FFTHandle;
+const osThreadAttr_t FFT_attributes = {
+  .name = "FFT",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityNormal,
+};
+/* Definitions for adcQueue */
+osMessageQueueId_t adcQueueHandle;
+const osMessageQueueAttr_t adcQueue_attributes = {
+  .name = "adcQueue"
+};
+/* Definitions for fftQueue */
+osMessageQueueId_t fftQueueHandle;
+const osMessageQueueAttr_t fftQueue_attributes = {
+  .name = "fftQueue"
+};
 /* USER CODE BEGIN PV */
 
 /* USER CODE END PV */
@@ -57,39 +109,25 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_ADC3_Init(void);
 static void MX_SPI3_Init(void);
+void StartDefaultTask(void *argument);
+void StartADC(void *argument);
+void StartDisplay(void *argument);
+void StartFFT(void *argument);
+
 /* USER CODE BEGIN PFP */
-void StartDefaultTask (void *argument) {
-  for(;;)
-  {
-		HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
-		//HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
+	if (GPIO_Pin == B1_Pin) {
+		HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin,
+				HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin));
 	}
 }
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
-/**
-  * Override default HAL_GetTick function
-  */
-uint32_t HAL_GetTick (void) {
-  static uint32_t ticks = 0U;
-         uint32_t i;
-
-  if (osKernelGetState () == osKernelRunning) {
-    return ((uint32_t)osKernelGetTickCount ());
-  }
-
-  /* If Kernel is not running wait approximately 1 ms then increment 
-     and return auxiliary tick counter value */
-  for (i = (SystemCoreClock >> 14U); i > 0U; i--) {
-    __NOP(); __NOP(); __NOP(); __NOP(); __NOP(); __NOP();
-    __NOP(); __NOP(); __NOP(); __NOP(); __NOP(); __NOP();
-  }
-  return ++ticks;
-}
-
+// Calibration for temperature
+#define TS_CAL1 *((uint16_t*) 0x1FF1E820)
+#define TS_CAL2 *((uint16_t*) 0x1FF1E820)
 /* USER CODE END 0 */
 
 /**
@@ -115,6 +153,7 @@ int main(void)
   SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
+
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
@@ -122,29 +161,80 @@ int main(void)
   MX_ADC3_Init();
   MX_SPI3_Init();
   /* USER CODE BEGIN 2 */
-  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
-  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
-  HAL_Delay(1);
-  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
-  /* Initialize CMSIS-RTOS2 */
-  osKernelInitialize ();
+#if (DISPLAY == 1)
+	OLED_0in95_rgb_test();
+#elif (DISPLAY == 2)
+	OLED_0in96_test();
+#endif
 
-  /* Create application main thread */
-  osThreadNew(StartDefaultTask, NULL, &app_main_attr);
-
-  /* Start thread execution */
-  osKernelStart();
-
+#if (BOOT_TEST == 1)
+	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+	HAL_Delay(1);
+	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+#endif
   /* USER CODE END 2 */
 
+  /* Init scheduler */
+  osKernelInitialize();
+
+  /* USER CODE BEGIN RTOS_MUTEX */
+	/* add mutexes, ... */
+  /* USER CODE END RTOS_MUTEX */
+
+  /* USER CODE BEGIN RTOS_SEMAPHORES */
+	/* add semaphores, ... */
+  /* USER CODE END RTOS_SEMAPHORES */
+
+  /* USER CODE BEGIN RTOS_TIMERS */
+	/* start timers, add new ones, ... */
+#if (QUEUES == 1)
+  /* USER CODE END RTOS_TIMERS */
+
+  /* Create the queue(s) */
+  /* creation of adcQueue */
+  adcQueueHandle = osMessageQueueNew (16, sizeof(uint16_t), &adcQueue_attributes);
+
+  /* creation of fftQueue */
+  fftQueueHandle = osMessageQueueNew (16, sizeof(uint16_t), &fftQueue_attributes);
+
+  /* USER CODE BEGIN RTOS_QUEUES */
+#endif
+	/* add queues, ... */
+  /* USER CODE END RTOS_QUEUES */
+
+  /* Create the thread(s) */
+  /* creation of defaultTask */
+  defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
+
+  /* creation of ADC */
+  ADCHandle = osThreadNew(StartADC, NULL, &ADC_attributes);
+
+  /* creation of Display */
+  DisplayHandle = osThreadNew(StartDisplay, NULL, &Display_attributes);
+
+  /* creation of FFT */
+  FFTHandle = osThreadNew(StartFFT, NULL, &FFT_attributes);
+
+  /* USER CODE BEGIN RTOS_THREADS */
+	/* add threads, ... */
+  /* USER CODE END RTOS_THREADS */
+
+  /* USER CODE BEGIN RTOS_EVENTS */
+	/* add events, ... */
+  /* USER CODE END RTOS_EVENTS */
+
+  /* Start scheduler */
+  osKernelStart();
+
+  /* We should never get here as control is now taken by the scheduler */
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while (1)
-  {
+	while (1) {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-  }
+	}
   /* USER CODE END 3 */
 }
 
@@ -197,7 +287,7 @@ void SystemClock_Config(void)
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2
                               |RCC_CLOCKTYPE_D3PCLK1|RCC_CLOCKTYPE_D1PCLK1;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
-  RCC_ClkInitStruct.SYSCLKDivider = RCC_SYSCLK_DIV4;
+  RCC_ClkInitStruct.SYSCLKDivider = RCC_SYSCLK_DIV8;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_HCLK_DIV1;
   RCC_ClkInitStruct.APB3CLKDivider = RCC_APB3_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_APB1_DIV1;
@@ -430,6 +520,142 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE END 4 */
 
+/* USER CODE BEGIN Header_StartDefaultTask */
+/**
+ * @brief  Function implementing the defaultTask thread.
+ * @param  argument: Not used
+ * @retval None
+ */
+/* USER CODE END Header_StartDefaultTask */
+void StartDefaultTask(void *argument)
+{
+  /* USER CODE BEGIN 5 */
+	/* Infinite loop */
+
+	for (;;) {
+#if (BOOT_TEST == 1)
+		HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+		//vTaskDelete(NULL);
+#else
+		HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
+#endif
+
+	}
+  /* USER CODE END 5 */
+}
+
+/* USER CODE BEGIN Header_StartADC */
+/**
+ * @brief Function implementing the ADC thread.
+ * @param argument: Not used
+ * @retval None
+ */
+/* USER CODE END Header_StartADC */
+void StartADC(void *argument)
+{
+  /* USER CODE BEGIN StartADC */
+#if (TEMP == 1)
+	HAL_ADC_Start(&hadc3);
+	uint16_t PomiarADC;
+	/* Infinite loop */
+	for (;;) {
+		if (HAL_ADC_PollForConversion(&hadc3, 10) == HAL_OK) {
+			PomiarADC = HAL_ADC_GetValue(&hadc3);
+			HAL_ADC_Start(&hadc3);
+//		int temperatura = (110-30)/(TS_CAL2-TS_CAL1)*(PomiarADC-TS_CAL1)+30;
+#if (RTOS == 1)
+			xQueueSend(adcQueueHandle, &PomiarADC, 0);
+#elif (RTOS == 2)
+
+#endif
+		}
+	}
+#else
+	//vTaskDelete(NULL);
+#endif
+  /* USER CODE END StartADC */
+}
+
+/* USER CODE BEGIN Header_StartDisplay */
+/**
+ * @brief Function implementing the Display thread.
+ * @param argument: Not used
+ * @retval None
+ */
+/* USER CODE END Header_StartDisplay */
+void StartDisplay(void *argument)
+{
+  /* USER CODE BEGIN StartDisplay */
+#if (DISPLAY != 0)
+	uint16_t OdczytADC;
+	/* Infinite loop */
+	for (;;) {
+#if (RTOS == 1)
+		xQueueReceive(fftQueueHandle, &OdczytADC, portMAX_DELAY);	//block until data recieved
+#elif (RTOS == 2)
+
+#endif
+#if (DISPLAY == 1)
+		OLED_0in95_rgb_print_num(OdczytADC);
+#elif (DISPLAY == 2)
+		OLED_0in96_print_num(OdczytADC);
+#endif
+	}
+#else
+		//vTaskDelete(NULL);
+#endif
+  /* USER CODE END StartDisplay */
+}
+
+/* USER CODE BEGIN Header_StartFFT */
+/**
+ * @brief Function implementing the FFT thread.
+ * @param argument: Not used
+ * @retval None
+ */
+/* USER CODE END Header_StartFFT */
+void StartFFT(void *argument)
+{
+  /* USER CODE BEGIN StartFFT */
+	/* Infinite loop */
+#if (FFT == 1)
+	uint16_t OdczytADC;
+	for (;;) {
+		xQueueReceive(adcQueueHandle, &OdczytADC, 0);
+
+		/* write signal to array */
+		for (int i = 0; i < SAMPLE_BUFFER_LENGTH; i++) {
+			float r = (float) i / (float) SAMPLING_RATE;
+			r *= 3.14159265359 * 2;
+			r *= 880; // frequency in Hz
+			float s = sin(r) + sin(r * 4) * 0.5 + sin(r * 3) * 0.25;
+			fft_input[i] = s;
+		}
+
+		/* analyze signal */
+		arm_rfft_fast_instance_f32 fft;
+		arm_rfft_fast_init_f32(&fft, SAMPLE_BUFFER_LENGTH);
+		arm_rfft_fast_f32(&fft, fft_input, fft_output, ifftFlag);
+		arm_cmplx_mag_f32(fft_output, fft_power, SAMPLE_BUFFER_LENGTH_HALF);
+		for (int i = 1; i < SAMPLE_BUFFER_LENGTH_HALF; i++) {
+//        Serial.printf("%i\tfrq: %.1f\tenergy %.6f\r\n", i, i * frequency_resolution, fft_power[i]);
+		}
+
+		/* find dominant frequency */
+		float32_t maxValue;
+		uint32_t maxIndex;
+		arm_max_f32(fft_power, SAMPLE_BUFFER_LENGTH_HALF, &maxValue, &maxIndex);
+		xQueueSend(fftQueueHandle, &maxIndex, 0);
+//    Serial.printf("max power: %f\r\n", maxValue);
+//    Serial.printf("max index: %i\r\n", maxIndex);
+//    Serial.printf("frequency: %f\r\n", (maxIndex * frequency_resolution));
+	}
+#else
+	//vTaskDelete(NULL);
+#endif
+  /* USER CODE END StartFFT */
+}
+
 /**
   * @brief  Period elapsed callback in non blocking mode
   * @note   This function is called  when TIM7 interrupt took place, inside
@@ -458,10 +684,10 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
-  /* User can add his own implementation to report the HAL error return state */
-  while(1)
-  {
-  }
+	/* User can add his own implementation to report the HAL error return state */
+	__disable_irq();
+	while (1) {
+	}
   /* USER CODE END Error_Handler_Debug */
 }
 
@@ -477,7 +703,7 @@ void assert_failed(uint8_t *file, uint32_t line)
 {
   /* USER CODE BEGIN 6 */
   /* User can add his own implementation to report the file name and line number,
-     tex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
+     ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */

@@ -39,4 +39,5 @@
   C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h \
   C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim.h \
   C:\Users\p1991\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim_ex.h \
-  C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\Include\cmsis_os2.h
+  C:\Users\p1991\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\Include\cmsis_os2.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h
