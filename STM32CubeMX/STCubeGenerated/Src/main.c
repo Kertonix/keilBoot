@@ -161,18 +161,18 @@ void StartInterruptTask(void *argument);
 
 /* USER CODE BEGIN PFP */
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
+	if (GPIO_Pin == B1_Pin) {
 #if ( START_TASK_FROM_ISR == 1)
 #if (RTOS == 1)
-	xTaskNotifyGive(interruptTaskHandle);
+		xTaskNotifyGive(interruptTaskHandle);
 #elif (RTOS == 2)
-	osEventFlagsSet(evt_id, FLAGS_MSK1);
+		osEventFlagsSet(evt_id, FLAGS_MSK1);
 #endif
 #else
-	if (GPIO_Pin == B1_Pin) {
 		HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin,
 				HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin));
-	}
 #endif
+	}
 }
 /* USER CODE END PFP */
 
@@ -640,7 +640,11 @@ void StartADC(void *argument)
 		}
 	}
 #else
+#if (RTOS == 1)
 	vTaskDelete(NULL);
+#elif (RTOS == 2)
+	osThreadExit();
+#endif
 #endif
   /* USER CODE END StartADC */
 }
@@ -673,7 +677,11 @@ void StartDisplay(void *argument)
 #endif
 	}
 #else
-		vTaskDelete(NULL);
+#if (RTOS == 1)
+	vTaskDelete(NULL);
+#elif (RTOS == 2)
+	osThreadExit();
+#endif
 #endif
   /* USER CODE END StartDisplay */
 }
@@ -744,7 +752,7 @@ void StartFFT(void *argument)
 	}
 #elif (TASK_SWITCH_TIME == 1)
 	for(;;) {
-		HAL_GPIO_WeitePin(LD2_GPIO_Port, LD2_Pin, RESET);
+		HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, RESET);
 #if (RTOS == 1)
 		taskYIELD();
 #elif (RTOS == 2)
@@ -752,7 +760,11 @@ void StartFFT(void *argument)
 #endif
 	}
 #else
+#if (RTOS == 1)
 	vTaskDelete(NULL);
+#elif (RTOS == 2)
+	osThreadExit();
+#endif
 #endif
   /* USER CODE END StartFFT */
 }
@@ -775,7 +787,11 @@ void StartInterruptTask(void *argument)
 #endif
 	HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin, HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin));
 #else
+#if (RTOS == 1)
 	vTaskDelete(NULL);
+#elif (RTOS == 2)
+	osThreadExit();
+#endif
 #endif
   /* USER CODE END StartInterruptTask */
 }
