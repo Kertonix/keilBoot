@@ -10,7 +10,7 @@
       <TargetName>Debug</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>6180000::V6.18::ARMCLANG</pCCUsed>
+      <pCCUsed>6190000::V6.19::ARMCLANG</pCCUsed>
       <uAC6>1</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -385,19 +385,119 @@
           <GroupName>Source</GroupName>
           <Files>
             <File>
-              <FileName>Blinky.c</FileName>
+              <FileName>DEV_Config.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Blinky.c</FilePath>
+              <FilePath>.\OLED\DEV_Config.c</FilePath>
             </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Documentation</GroupName>
-          <Files>
             <File>
-              <FileName>Abstract.txt</FileName>
+              <FileName>DEV_Config.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\Abstract.txt</FilePath>
+              <FilePath>.\OLED\DEV_Config.h</FilePath>
+            </File>
+            <File>
+              <FileName>GUI_Paint.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\OLED\GUI_Paint.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUI_Paint.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OLED\GUI_Paint.h</FilePath>
+            </File>
+            <File>
+              <FileName>ImageData.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\OLED\ImageData.c</FilePath>
+            </File>
+            <File>
+              <FileName>ImageData.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OLED\ImageData.h</FilePath>
+            </File>
+            <File>
+              <FileName>OLED_0in95_rgb.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\OLED\OLED_0in95_rgb.c</FilePath>
+            </File>
+            <File>
+              <FileName>OLED_0in95_rgb.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OLED\OLED_0in95_rgb.h</FilePath>
+            </File>
+            <File>
+              <FileName>OLED_0in95_rgb_test.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\OLED\OLED_0in95_rgb_test.c</FilePath>
+            </File>
+            <File>
+              <FileName>OLED_0in96.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\OLED\OLED_0in96.c</FilePath>
+            </File>
+            <File>
+              <FileName>OLED_0in96.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OLED\OLED_0in96.h</FilePath>
+            </File>
+            <File>
+              <FileName>OLED_0in96_test.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\OLED\OLED_0in96_test.c</FilePath>
+            </File>
+            <File>
+              <FileName>spi.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OLED\spi.h</FilePath>
+            </File>
+            <File>
+              <FileName>test.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OLED\test.h</FilePath>
+            </File>
+            <File>
+              <FileName>font8.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\OLED\Fonts\font8.c</FilePath>
+            </File>
+            <File>
+              <FileName>font12.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\OLED\Fonts\font12.c</FilePath>
+            </File>
+            <File>
+              <FileName>font12CN.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\OLED\Fonts\font12CN.c</FilePath>
+            </File>
+            <File>
+              <FileName>font16.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\OLED\Fonts\font16.c</FilePath>
+            </File>
+            <File>
+              <FileName>font20.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\OLED\Fonts\font20.c</FilePath>
+            </File>
+            <File>
+              <FileName>font24.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\OLED\Fonts\font24.c</FilePath>
+            </File>
+            <File>
+              <FileName>font24CN.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\OLED\Fonts\font24CN.c</FilePath>
+            </File>
+            <File>
+              <FileName>fonts.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OLED\Fonts\fonts.h</FilePath>
+            </File>
+            <File>
+              <FileName>arm_math.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\arm_math\arm_math.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -814,19 +914,119 @@
           <GroupName>Source</GroupName>
           <Files>
             <File>
-              <FileName>Blinky.c</FileName>
+              <FileName>DEV_Config.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Blinky.c</FilePath>
+              <FilePath>.\OLED\DEV_Config.c</FilePath>
             </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Documentation</GroupName>
-          <Files>
             <File>
-              <FileName>Abstract.txt</FileName>
+              <FileName>DEV_Config.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\Abstract.txt</FilePath>
+              <FilePath>.\OLED\DEV_Config.h</FilePath>
+            </File>
+            <File>
+              <FileName>GUI_Paint.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\OLED\GUI_Paint.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUI_Paint.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OLED\GUI_Paint.h</FilePath>
+            </File>
+            <File>
+              <FileName>ImageData.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\OLED\ImageData.c</FilePath>
+            </File>
+            <File>
+              <FileName>ImageData.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OLED\ImageData.h</FilePath>
+            </File>
+            <File>
+              <FileName>OLED_0in95_rgb.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\OLED\OLED_0in95_rgb.c</FilePath>
+            </File>
+            <File>
+              <FileName>OLED_0in95_rgb.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OLED\OLED_0in95_rgb.h</FilePath>
+            </File>
+            <File>
+              <FileName>OLED_0in95_rgb_test.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\OLED\OLED_0in95_rgb_test.c</FilePath>
+            </File>
+            <File>
+              <FileName>OLED_0in96.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\OLED\OLED_0in96.c</FilePath>
+            </File>
+            <File>
+              <FileName>OLED_0in96.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OLED\OLED_0in96.h</FilePath>
+            </File>
+            <File>
+              <FileName>OLED_0in96_test.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\OLED\OLED_0in96_test.c</FilePath>
+            </File>
+            <File>
+              <FileName>spi.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OLED\spi.h</FilePath>
+            </File>
+            <File>
+              <FileName>test.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OLED\test.h</FilePath>
+            </File>
+            <File>
+              <FileName>font8.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\OLED\Fonts\font8.c</FilePath>
+            </File>
+            <File>
+              <FileName>font12.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\OLED\Fonts\font12.c</FilePath>
+            </File>
+            <File>
+              <FileName>font12CN.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\OLED\Fonts\font12CN.c</FilePath>
+            </File>
+            <File>
+              <FileName>font16.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\OLED\Fonts\font16.c</FilePath>
+            </File>
+            <File>
+              <FileName>font20.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\OLED\Fonts\font20.c</FilePath>
+            </File>
+            <File>
+              <FileName>font24.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\OLED\Fonts\font24.c</FilePath>
+            </File>
+            <File>
+              <FileName>font24CN.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\OLED\Fonts\font24CN.c</FilePath>
+            </File>
+            <File>
+              <FileName>fonts.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\OLED\Fonts\fonts.h</FilePath>
+            </File>
+            <File>
+              <FileName>arm_math.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\arm_math\arm_math.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -977,6 +1177,13 @@
     <components>
       <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.6.0" condition="ARMv6_7_8-M Device">
         <package name="CMSIS" schemaVersion="1.7.7" url="http://www.keil.com/pack/" vendor="ARM" version="5.9.0"/>
+        <targetInfos>
+          <targetInfo name="Debug"/>
+          <targetInfo name="Release"/>
+        </targetInfos>
+      </component>
+      <component Cclass="CMSIS" Cgroup="DSP" Cvariant="Source" Cvendor="ARM" Cversion="1.14.2" condition="CMSISCORE">
+        <package name="CMSIS-DSP" schemaVersion="1.7.7" url="https://www.keil.com/pack/" vendor="ARM" version="1.14.2"/>
         <targetInfos>
           <targetInfo name="Debug"/>
           <targetInfo name="Release"/>

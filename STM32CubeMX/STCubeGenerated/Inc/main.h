@@ -76,10 +76,11 @@ void Error_Handler(void);
 #define LD2_Pin GPIO_PIN_1
 #define LD2_GPIO_Port GPIOE
 /* USER CODE BEGIN Private defines */
-extern void app_main (void *arg);
 
-extern uint64_t app_main_stk[];
-extern const osThreadAttr_t app_main_attr;
+extern int OLED_0in95_rgb_test(void);
+extern int OLED_0in96_test(void);
+extern int OLED_0in95_rgb_print_num(uint16_t valueToPrint);
+extern int OLED_0in96_print_num(uint16_t valueToPrint);
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
