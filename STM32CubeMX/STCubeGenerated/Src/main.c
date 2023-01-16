@@ -9,8 +9,8 @@
 #include <arm_math.h>
 
 #define RTOS 2 				// 1-FreeRTOS, 2-Keil RTX 5
-#define TEST_SELECTION 4	// 0-BOOT_TEST, 1-INTERRUPT_NO_LOAD, 2-INTERRUPT_LOAD, 3-START_TASK_FROM_ISR_NO_LOAD, 4-START_TASK_FROM_ISR_LOAD, 5-TASK_SWITCH_TIME
-#define DISPLAY_TYPE 1 		// 0-off, 1-display 0_95in, 2-display 0_96in
+#define TEST_SELECTION 2	// 0-BOOT_TEST, 1-INTERRUPT_NO_LOAD, 2-INTERRUPT_LOAD, 3-START_TASK_FROM_ISR_NO_LOAD, 4-START_TASK_FROM_ISR_LOAD, 5-TASK_SWITCH_TIME
+#define DISPLAY_TYPE 2 		// 0-off, 1-display 0_95in, 2-display 0_96in
 
 #if (TEST_SELECTION == 0)	//BOOT_TEST
 	#define BLINK_LD2 0
@@ -164,7 +164,9 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
 	if (GPIO_Pin == B1_Pin) {
 #if ( START_TASK_FROM_ISR == 1)
 #if (RTOS == 1)
-		xTaskNotifyGive(interruptTaskHandle);
+		BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+		vTaskNotifyGiveFromISR(interruptTaskHandle, &xHigherPriorityTaskWoken);
+	    portYIELD_FROM_ISR( xHigherPriorityTaskWoken );
 #elif (RTOS == 2)
 		osEventFlagsSet(evt_id, FLAGS_MSK1);
 #endif
@@ -190,10 +192,12 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
 int main(void)
 {
   /* USER CODE BEGIN 1 */
+#if (RTOS == 2)
 	evt_id = osEventFlagsNew(NULL);
 	if (evt_id == NULL) {
 	  ; // Event Flags object not created, handle failure
 	}
+#endif
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -780,12 +784,14 @@ void StartInterruptTask(void *argument)
 {
   /* USER CODE BEGIN StartInterruptTask */
 #if ( START_TASK_FROM_ISR == 1)
+	for(;;){
 #if (RTOS == 1)
-	ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
+		ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
 #elif (RTOS == 2)
-	osEventFlagsWait(evt_id, FLAGS_MSK1, osFlagsWaitAny, osWaitForever);
+		osEventFlagsWait(evt_id, FLAGS_MSK1, osFlagsWaitAny, osWaitForever);
 #endif
-	HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin, HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin));
+		HAL_GPIO_TogglePin(LD1_GPIO_Port, LD1_Pin);
+	}
 #else
 #if (RTOS == 1)
 	vTaskDelete(NULL);
