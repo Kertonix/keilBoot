@@ -1,20 +1,4 @@
 /* USER CODE BEGIN Header */
-/**
- ******************************************************************************
- * @file           : main.c
- * @brief          : Main program body
- ******************************************************************************
- * @attention
- *
- * Copyright (c) 2022 STMicroelectronics.
- * All rights reserved.
- *
- * This software is licensed under terms that can be found in the LICENSE file
- * in the root directory of this software component.
- * If no LICENSE file comes with this software, it is provided AS-IS.
- *
- ******************************************************************************
- */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
@@ -22,16 +6,61 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include <stdio.h>
-//#include <queue.h>
-//#include <arm_math.h>
-//#include "OLED/test.h"
 
-#define RTOS 1 		// 1-FreeRTOS, 2-Keil RTX 5
-#define BOOT_TEST 0
-#define TEMP 0
-#define FFT 0
-#define DISPLAY 0	// 0-off, 1-display 0_95in, 2-display 0_96in
-#define QUEUES 0
+#define RTOS 2 				// 1-FreeRTOS, 2-Keil RTX 5
+#define TEST_SELECTION 1	// 0-BOOT_TEST, 1-INTERRUPT_NO_LOAD, 2-INTERRUPT_LOAD, 3-START_TASK_FROM_ISR_NO_LOAD, 4-START_TASK_FROM_ISR_LOAD, 5-TASK_SWITCH_TIME
+#define DISPLAY_TYPE 1 		// 0-off, 1-display 0_95in, 2-display 0_96in
+
+#if (TEST_SELECTION == 0)	//BOOT_TEST
+	#define BLINK_LD2 0
+	#define TEMP 0
+	#define FFT 0
+	#define DISPLAY 0
+	#define QUEUES 0
+	#define TASK_SWITCH_TIME 0
+#elif (TEST_SELECTION == 1)	//INTERRUPT_NO_LOAD
+	#define BLINK_LD2 1
+	#define TEMP 0
+	#define FFT 0
+	#define DISPLAY 0
+	#define QUEUES 0
+	#define TASK_SWITCH_TIME 0	//INTERRUPT_LOAD
+#elif (TEST_SELECTION == 2)
+	#define BLINK_LD2 1
+	#define TEMP 1
+	#define FFT 1
+	#define DISPLAY DISPLAY_TYPE
+	#define QUEUES 1
+	#define TASK_SWITCH_TIME 0
+#elif (TEST_SELECTION == 3)		//START_TASK_FROM_ISR_NO_LOAD
+	#define BLINK_LD2 0
+	#define TEMP 0
+	#define FFT 0
+	#define DISPLAY 0
+	#define QUEUES 0
+	#define TASK_SWITCH_TIME 0
+	#define START_TASK_FROM_ISR 1
+#elif (TEST_SELECTION == 4)		//START_TASK_FROM_ISR_LOAD
+	#define BLINK_LD2 1
+	#define TEMP 1
+	#define FFT 1
+	#define DISPLAY DISPLAY_TYPE
+	#define QUEUES 1
+	#define TASK_SWITCH_TIME 0
+	#define START_TASK_FROM_ISR 1
+#elif (TEST_SELECTION == 5)		//TASK_SWITCH_TIME
+	#define BLINK_LD2 0
+	#define TEMP 0
+	#define FFT 0
+	#define DISPLAY 0
+	#define QUEUES 0
+	#define TASK_SWITCH_TIME 1
+#endif
+
+#if (RTOS == 1)
+#include <queue.h>
+#include "OLED/test.h"
+#endif
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -52,6 +81,11 @@ float fft_power[SAMPLE_BUFFER_LENGTH_HALF];
 uint8_t ifftFlag = 0;
 float frequency_resolution = (float) SAMPLING_RATE
 		/ (float) SAMPLE_BUFFER_LENGTH;
+
+//event flags for keil
+osEventFlagsId_t evt_id;
+#define FLAGS_MSK1 0x00000001U
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -68,8 +102,8 @@ SPI_HandleTypeDef hspi3;
 osThreadId_t defaultTaskHandle;
 const osThreadAttr_t defaultTask_attributes = {
   .name = "defaultTask",
-	.stack_size = 128 * 4,
-	.priority = (osPriority_t) osPriorityNormal,
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityNormal,
 };
 /* Definitions for ADC */
 osThreadId_t ADCHandle;
@@ -90,7 +124,14 @@ osThreadId_t FFTHandle;
 const osThreadAttr_t FFT_attributes = {
   .name = "FFT",
   .stack_size = 128 * 4,
-  .priority = (osPriority_t) osPriorityNormal,
+  .priority = (osPriority_t) osPriorityNormal1,
+};
+/* Definitions for interruptTask */
+osThreadId_t interruptTaskHandle;
+const osThreadAttr_t interruptTask_attributes = {
+  .name = "interruptTask",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityHigh,
 };
 /* Definitions for adcQueue */
 osMessageQueueId_t adcQueueHandle;
@@ -115,12 +156,23 @@ void StartDefaultTask(void *argument);
 void StartADC(void *argument);
 void StartDisplay(void *argument);
 void StartFFT(void *argument);
+void StartInterruptTask(void *argument);
 
 /* USER CODE BEGIN PFP */
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
 	if (GPIO_Pin == B1_Pin) {
+#if ( START_TASK_FROM_ISR == 1)
+#if (RTOS == 1)
+		BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+		vTaskNotifyGiveFromISR(interruptTaskHandle, &xHigherPriorityTaskWoken);
+	    portYIELD_FROM_ISR( xHigherPriorityTaskWoken );
+#elif (RTOS == 2)
+		osEventFlagsSet(evt_id, FLAGS_MSK1);
+#endif
+#else
 		HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin,
 				HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin));
+#endif
 	}
 }
 /* USER CODE END PFP */
@@ -139,7 +191,12 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+#if (RTOS == 2)
+	evt_id = osEventFlagsNew(NULL);
+	if (evt_id == NULL) {
+	  ; // Event Flags object not created, handle failure
+	}
+#endif
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -195,7 +252,7 @@ int main(void)
 
   /* Create the queue(s) */
   /* creation of adcQueue */
-  adcQueueHandle = osMessageQueueNew (16, sizeof(uint16_t), &adcQueue_attributes);
+  adcQueueHandle = osMessageQueueNew (2, sizeof(uint16_t), &adcQueue_attributes);
 
   /* creation of fftQueue */
   fftQueueHandle = osMessageQueueNew (16, sizeof(uint16_t), &fftQueue_attributes);
@@ -207,16 +264,19 @@ int main(void)
 
   /* Create the thread(s) */
   /* creation of defaultTask */
-  osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
+  defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
 
   /* creation of ADC */
-//  ADCHandle = osThreadNew(StartADC, NULL, &ADC_attributes);
-//
-//  /* creation of Display */
-//  DisplayHandle = osThreadNew(StartDisplay, NULL, &Display_attributes);
-//
-//  /* creation of FFT */
-//  FFTHandle = osThreadNew(StartFFT, NULL, &FFT_attributes);
+  ADCHandle = osThreadNew(StartADC, NULL, &ADC_attributes);
+
+  /* creation of Display */
+  DisplayHandle = osThreadNew(StartDisplay, NULL, &Display_attributes);
+
+  /* creation of FFT */
+  FFTHandle = osThreadNew(StartFFT, NULL, &FFT_attributes);
+
+  /* creation of interruptTask */
+  interruptTaskHandle = osThreadNew(StartInterruptTask, NULL, &interruptTask_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
 	/* add threads, ... */
@@ -535,13 +595,23 @@ void StartDefaultTask(void *argument)
 	/* Infinite loop */
 
 	for (;;) {
-#if (BOOT_TEST == 1)
-		HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
-//		vTaskDelete(NULL);
-#else
-		HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
+#if (TASK_SWITCH_TIME == 1)
+		HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, SET);
+#if (RTOS == 1)
+		taskYIELD();
+#elif (RTOS == 2)
+		osThreadYield();
+#endif
 #endif
 
+#if (BOOT_TEST == 1)
+		HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+		vTaskDelete(NULL);
+#endif
+
+#if (BLINK_LD2 == 1)
+		HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
+#endif
 	}
   /* USER CODE END 5 */
 }
@@ -568,12 +638,16 @@ void StartADC(void *argument)
 #if (RTOS == 1)
 			xQueueSend(adcQueueHandle, &PomiarADC, 0);
 #elif (RTOS == 2)
-
+			osMessageQueuePut(adcQueueHandle, &PomiarADC, 0, 0);
 #endif
 		}
 	}
 #else
-//	vTaskDelete(NULL);
+#if (RTOS == 1)
+	vTaskDelete(NULL);
+#elif (RTOS == 2)
+	osThreadExit();
+#endif
 #endif
   /* USER CODE END StartADC */
 }
@@ -594,9 +668,11 @@ void StartDisplay(void *argument)
 	for (;;) {
 #if (RTOS == 1)
 		xQueueReceive(fftQueueHandle, &OdczytADC, portMAX_DELAY);	//block until data recieved
+//		xQueueReceive(adcQueueHandle, &OdczytADC, 0);	//no block
 #elif (RTOS == 2)
-
+		osMessageQueueGet(fftQueueHandle, &OdczytADC, 0, osWaitForever);	//block until data recieved
 #endif
+
 #if (DISPLAY == 1)
 		OLED_0in95_rgb_print_num(OdczytADC);
 #elif (DISPLAY == 2)
@@ -604,7 +680,11 @@ void StartDisplay(void *argument)
 #endif
 	}
 #else
-//		vTaskDelete(NULL);
+#if (RTOS == 1)
+	vTaskDelete(NULL);
+#elif (RTOS == 2)
+	osThreadExit();
+#endif
 #endif
   /* USER CODE END StartDisplay */
 }
@@ -622,9 +702,24 @@ void StartFFT(void *argument)
 	/* Infinite loop */
 #if (FFT == 1)
 	uint16_t OdczytADC;
+#if (RTOS == 1)
+		taskENTER_CRITICAL();
+#elif (RTOS == 2)
+		osKernelLock();
+#endif
+	arm_rfft_fast_instance_f32 fft;
+	arm_rfft_fast_init_f32(&fft, SAMPLE_BUFFER_LENGTH);
+#if (RTOS == 1)
+		taskEXIT_CRITICAL();
+#elif (RTOS == 2)
+		osKernelUnlock();
+#endif
 	for (;;) {
-		xQueueReceive(adcQueueHandle, &OdczytADC, 0);
-
+#if (RTOS == 1)
+		xQueueReceive(adcQueueHandle, &OdczytADC, portMAX_DELAY);	//block until data recieved
+#elif (RTOS == 2)
+		osMessageQueueGet(adcQueueHandle, &OdczytADC, 0, osWaitForever);	//block until data recieved
+#endif
 		/* write signal to array */
 		for (int i = 0; i < SAMPLE_BUFFER_LENGTH; i++) {
 			float r = (float) i / (float) SAMPLING_RATE;
@@ -635,27 +730,75 @@ void StartFFT(void *argument)
 		}
 
 		/* analyze signal */
-		arm_rfft_fast_instance_f32 fft;
-		arm_rfft_fast_init_f32(&fft, SAMPLE_BUFFER_LENGTH);
+#if (RTOS == 1)
+		taskENTER_CRITICAL();
+#elif (RTOS == 2)
+		osKernelLock();
+#endif
 		arm_rfft_fast_f32(&fft, fft_input, fft_output, ifftFlag);
 		arm_cmplx_mag_f32(fft_output, fft_power, SAMPLE_BUFFER_LENGTH_HALF);
-		for (int i = 1; i < SAMPLE_BUFFER_LENGTH_HALF; i++) {
-//        Serial.printf("%i\tfrq: %.1f\tenergy %.6f\r\n", i, i * frequency_resolution, fft_power[i]);
-		}
+#if (RTOS == 1)
+		taskEXIT_CRITICAL();
+#elif (RTOS == 2)
+		osKernelUnlock();
+#endif
 
 		/* find dominant frequency */
 		float32_t maxValue;
 		uint32_t maxIndex;
 		arm_max_f32(fft_power, SAMPLE_BUFFER_LENGTH_HALF, &maxValue, &maxIndex);
-		xQueueSend(fftQueueHandle, &maxIndex, 0);
-//    Serial.printf("max power: %f\r\n", maxValue);
-//    Serial.printf("max index: %i\r\n", maxIndex);
-//    Serial.printf("frequency: %f\r\n", (maxIndex * frequency_resolution));
+#if (RTOS == 1)
+			xQueueSend(fftQueueHandle, &OdczytADC, portMAX_DELAY);
+#elif (RTOS == 2)
+			osMessageQueuePut(fftQueueHandle, &OdczytADC, 0, osWaitForever);
+#endif
+	}
+#elif (TASK_SWITCH_TIME == 1)
+	for(;;) {
+		HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, RESET);
+#if (RTOS == 1)
+		taskYIELD();
+#elif (RTOS == 2)
+		osThreadYield();
+#endif
 	}
 #else
-	//vTaskDelete(NULL);
+#if (RTOS == 1)
+	vTaskDelete(NULL);
+#elif (RTOS == 2)
+	osThreadExit();
+#endif
 #endif
   /* USER CODE END StartFFT */
+}
+
+/* USER CODE BEGIN Header_StartInterruptTask */
+/**
+* @brief Function implementing the interruptTask thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_StartInterruptTask */
+void StartInterruptTask(void *argument)
+{
+  /* USER CODE BEGIN StartInterruptTask */
+#if ( START_TASK_FROM_ISR == 1)
+	for(;;){
+#if (RTOS == 1)
+		ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
+#elif (RTOS == 2)
+		osEventFlagsWait(evt_id, FLAGS_MSK1, osFlagsWaitAny, osWaitForever);
+#endif
+		HAL_GPIO_TogglePin(LD1_GPIO_Port, LD1_Pin);
+	}
+#else
+#if (RTOS == 1)
+	vTaskDelete(NULL);
+#elif (RTOS == 2)
+	osThreadExit();
+#endif
+#endif
+  /* USER CODE END StartInterruptTask */
 }
 
 /**
