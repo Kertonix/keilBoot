@@ -9,7 +9,7 @@
 #include <arm_math.h>
 
 #define RTOS 2 				// 1-FreeRTOS, 2-Keil RTX 5
-#define TEST_SELECTION 0	// 0-BOOT_TEST, 1-INTERRUPT_NO_LOAD, 2-INTERRUPT_LOAD, 3-START_TASK_FROM_ISR_NO_LOAD, 4-START_TASK_FROM_ISR_LOAD, 5-TASK_SWITCH_TIME
+#define TEST_SELECTION 1	// 0-BOOT_TEST, 1-INTERRUPT_NO_LOAD, 2-INTERRUPT_LOAD, 3-START_TASK_FROM_ISR_NO_LOAD, 4-START_TASK_FROM_ISR_LOAD, 5-TASK_SWITCH_TIME
 #define DISPLAY_TYPE 2 		// 0-off, 1-display 0_95in, 2-display 0_96in
 
 #if (TEST_SELECTION == 0)	//BOOT_TEST
@@ -270,16 +270,16 @@ int main(void)
   defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
 
   /* creation of ADC */
-//  ADCHandle = osThreadNew(StartADC, NULL, &ADC_attributes);
+  ADCHandle = osThreadNew(StartADC, NULL, &ADC_attributes);
 
-//  /* creation of Display */
-//  DisplayHandle = osThreadNew(StartDisplay, NULL, &Display_attributes);
+  /* creation of Display */
+  DisplayHandle = osThreadNew(StartDisplay, NULL, &Display_attributes);
 
-//  /* creation of FFT */
-//  FFTHandle = osThreadNew(StartFFT, NULL, &FFT_attributes);
+  /* creation of FFT */
+  FFTHandle = osThreadNew(StartFFT, NULL, &FFT_attributes);
 
-//  /* creation of interruptTask */
-//  interruptTaskHandle = osThreadNew(StartInterruptTask, NULL, &interruptTask_attributes);
+  /* creation of interruptTask */
+  interruptTaskHandle = osThreadNew(StartInterruptTask, NULL, &interruptTask_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
 	/* add threads, ... */
