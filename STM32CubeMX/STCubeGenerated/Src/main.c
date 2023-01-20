@@ -9,10 +9,11 @@
 #include <arm_math.h>
 
 #define RTOS 2 				// 1-FreeRTOS, 2-Keil RTX 5
-#define TEST_SELECTION 4	// 0-BOOT_TEST, 1-INTERRUPT_NO_LOAD, 2-INTERRUPT_LOAD, 3-START_TASK_FROM_ISR_NO_LOAD, 4-START_TASK_FROM_ISR_LOAD, 5-TASK_SWITCH_TIME
+#define TEST_SELECTION 0	// 0-BOOT_TEST, 1-INTERRUPT_NO_LOAD, 2-INTERRUPT_LOAD, 3-START_TASK_FROM_ISR_NO_LOAD, 4-START_TASK_FROM_ISR_LOAD, 5-TASK_SWITCH_TIME
 #define DISPLAY_TYPE 2 		// 0-off, 1-display 0_95in, 2-display 0_96in
 
 #if (TEST_SELECTION == 0)	//BOOT_TEST
+	#define BOOT_TEST 1
 	#define BLINK_LD2 0
 	#define TEMP 0
 	#define FFT 0
@@ -193,7 +194,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-#if (RTOS == 2)
+#if (RTOS == 2 && BOOT_TEST != 1)
 	evt_id = osEventFlagsNew(NULL);
 	if (evt_id == NULL) {
 	  ; // Event Flags object not created, handle failure
@@ -269,16 +270,16 @@ int main(void)
   defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
 
   /* creation of ADC */
-  ADCHandle = osThreadNew(StartADC, NULL, &ADC_attributes);
+//  ADCHandle = osThreadNew(StartADC, NULL, &ADC_attributes);
 
-  /* creation of Display */
-  DisplayHandle = osThreadNew(StartDisplay, NULL, &Display_attributes);
+//  /* creation of Display */
+//  DisplayHandle = osThreadNew(StartDisplay, NULL, &Display_attributes);
 
-  /* creation of FFT */
-  FFTHandle = osThreadNew(StartFFT, NULL, &FFT_attributes);
+//  /* creation of FFT */
+//  FFTHandle = osThreadNew(StartFFT, NULL, &FFT_attributes);
 
-  /* creation of interruptTask */
-  interruptTaskHandle = osThreadNew(StartInterruptTask, NULL, &interruptTask_attributes);
+//  /* creation of interruptTask */
+//  interruptTaskHandle = osThreadNew(StartInterruptTask, NULL, &interruptTask_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
 	/* add threads, ... */
@@ -608,7 +609,11 @@ void StartDefaultTask(void *argument)
 
 #if (BOOT_TEST == 1)
 		HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
-		vTaskDelete(NULL);
+#if (RTOS == 1)
+	vTaskDelete(NULL);
+#elif (RTOS == 2)
+	osThreadExit();
+#endif
 #endif
 
 #if (BLINK_LD2 == 1)
