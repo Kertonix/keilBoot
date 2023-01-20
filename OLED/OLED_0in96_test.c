@@ -61,25 +61,6 @@ int OLED_0in96_test(void)
     Paint_SelectImage(BlackImage);
     Driver_Delay_ms(500);
     Paint_Clear(BLACK);
-//    while(1) {
-        
-//        // 2.Drawing on the image
-//        printf("Drawing:page 1\r\n");
-//        Paint_DrawPoint(20, 10, WHITE, DOT_PIXEL_1X1, DOT_STYLE_DFT);
-//        Paint_DrawPoint(30, 10, WHITE, DOT_PIXEL_2X2, DOT_STYLE_DFT);
-//        Paint_DrawPoint(40, 10, WHITE, DOT_PIXEL_3X3, DOT_STYLE_DFT);
-//        Paint_DrawLine(10, 10, 10, 20, WHITE, DOT_PIXEL_1X1, LINE_STYLE_SOLID);
-//        Paint_DrawLine(20, 20, 20, 30, WHITE, DOT_PIXEL_1X1, LINE_STYLE_SOLID);
-//        Paint_DrawLine(30, 30, 30, 40, WHITE, DOT_PIXEL_1X1, LINE_STYLE_DOTTED);
-//        Paint_DrawLine(40, 40, 40, 50, WHITE, DOT_PIXEL_1X1, LINE_STYLE_DOTTED);
-//        Paint_DrawCircle(60, 30, 15, WHITE, DOT_PIXEL_1X1, DRAW_FILL_EMPTY);
-//        Paint_DrawCircle(100, 40, 20, WHITE, DOT_PIXEL_1X1, DRAW_FILL_FULL);
-//        Paint_DrawRectangle(50, 30, 60, 40, WHITE, DOT_PIXEL_1X1, DRAW_FILL_EMPTY);
-//        Paint_DrawRectangle(90, 30, 110, 50, BLACK, DOT_PIXEL_1X1, DRAW_FILL_FULL);
-//        // 3.Show image on page1
-//        OLED_0in96_display(BlackImage);
-//        Driver_Delay_ms(2000);
-//        Paint_Clear(BLACK);
         
         // Drawing on the image
 //        printf("Drawing:page 2\r\n");
@@ -93,22 +74,8 @@ int OLED_0in96_test(void)
         Driver_Delay_ms(2000); 
         Paint_Clear(BLACK);     
         
-//        // Drawing on the image
-//        printf("Drawing:page 3\r\n");
-//        Paint_DrawString_CN(10, 0,"���Abc", &Font12CN, WHITE, WHITE);
-//        Paint_DrawString_CN(0, 20, "΢ѩ����", &Font24CN, WHITE, WHITE);
-//        // Show image on page3
-//        OLED_0in96_display(BlackImage);
-//        Driver_Delay_ms(2000);
-//        Paint_Clear(BLACK);
-		
-//		// show the array image
-//        printf("Drawing:page 4\r\n");
-//        OLED_0in96_display(gImage_0in96);
-//        Driver_Delay_ms(2000);
-//        Paint_Clear(BLACK);
-
-//    }
+	free(BlackImage);
+return 0;
 }
 
 int OLED_0in96_print_num(uint16_t valueToPrint) {

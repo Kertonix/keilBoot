@@ -13,7 +13,6 @@
 #include "spi.h"
 
 //#include "usart.h"
-#include <stdio.h>		//printf()
 #include <string.h>
 #include <stdlib.h>
 
@@ -25,7 +24,7 @@ note:
 uint8_t System_Init(void)
 {
 #if USE_SPI_4W
-	printf("USE_SPI_4W\r\n");
+	//printf("USE_SPI_4W\r\n");
 #elif USE_IIC
 	printf("USE_IIC\r\n");
 	OLED_CS_0;
@@ -84,6 +83,7 @@ uint8_t SPI4W_Write_Byte(uint8_t value)
 //
 //    return *((__IO uint8_t *)(&SPI1->TXDR));
 #endif
+return 0;
 }
 
 void I2C_Write_Byte(uint8_t value, uint8_t Cmd)

@@ -25,9 +25,6 @@
 #define USE_IIC 		0
 #define USE_IIC_SOFT	0
 
-#define IIC_CMD		0X00
-#define IIC_RAM		0X40
-
 //OLED GPIO
 #define OLED_CS_0		HAL_GPIO_WritePin(OLED_CS_GPIO_Port, OLED_CS_Pin, GPIO_PIN_RESET)
 #define OLED_CS_1		HAL_GPIO_WritePin(OLED_CS_GPIO_Port, OLED_CS_Pin, GPIO_PIN_SET)

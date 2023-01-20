@@ -465,11 +465,6 @@
               <FilePath>.\OLED\Fonts\font12.c</FilePath>
             </File>
             <File>
-              <FileName>font12CN.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\OLED\Fonts\font12CN.c</FilePath>
-            </File>
-            <File>
               <FileName>font16.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\OLED\Fonts\font16.c</FilePath>
@@ -483,11 +478,6 @@
               <FileName>font24.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\OLED\Fonts\font24.c</FilePath>
-            </File>
-            <File>
-              <FileName>font24CN.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\OLED\Fonts\font24CN.c</FilePath>
             </File>
             <File>
               <FileName>fonts.h</FileName>
@@ -994,11 +984,6 @@
               <FilePath>.\OLED\Fonts\font12.c</FilePath>
             </File>
             <File>
-              <FileName>font12CN.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\OLED\Fonts\font12CN.c</FilePath>
-            </File>
-            <File>
               <FileName>font16.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\OLED\Fonts\font16.c</FilePath>
@@ -1012,11 +997,6 @@
               <FileName>font24.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\OLED\Fonts\font24.c</FilePath>
-            </File>
-            <File>
-              <FileName>font24CN.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\OLED\Fonts\font24CN.c</FilePath>
             </File>
             <File>
               <FileName>fonts.h</FileName>

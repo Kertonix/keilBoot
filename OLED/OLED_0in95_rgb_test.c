@@ -125,6 +125,7 @@ int OLED_0in95_rgb_test(void) {
 
 	OLED_0in95_rgb_Clear();
 //	}
+return 0;
 }
 
 int OLED_0in95_rgb_print_num(uint16_t valueToPrint) {

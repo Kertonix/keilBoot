@@ -124,8 +124,8 @@ const osThreadAttr_t Display_attributes = {
 osThreadId_t FFTHandle;
 const osThreadAttr_t FFT_attributes = {
   .name = "FFT",
-  .stack_size = 128 * 4,
-  .priority = (osPriority_t) osPriorityNormal1,
+  .stack_size = 256 * 4,
+  .priority = (osPriority_t) osPriorityNormal,
 };
 /* Definitions for interruptTask */
 osThreadId_t interruptTaskHandle;
