@@ -9,7 +9,7 @@
 #include <arm_math.h>
 
 #define RTOS 2 				// 1-FreeRTOS, 2-Keil RTX 5
-#define TEST_SELECTION 2	// 0-BOOT_TEST, 1-INTERRUPT_NO_LOAD, 2-INTERRUPT_LOAD, 3-START_TASK_FROM_ISR_NO_LOAD, 4-START_TASK_FROM_ISR_LOAD, 5-TASK_SWITCH_TIME
+#define TEST_SELECTION 4	// 0-BOOT_TEST, 1-INTERRUPT_NO_LOAD, 2-INTERRUPT_LOAD, 3-START_TASK_FROM_ISR_NO_LOAD, 4-START_TASK_FROM_ISR_LOAD, 5-TASK_SWITCH_TIME
 #define DISPLAY_TYPE 2 		// 0-off, 1-display 0_95in, 2-display 0_96in
 
 #if (TEST_SELECTION == 0)	//BOOT_TEST
@@ -59,6 +59,7 @@
 #endif
 
 #if (RTOS == 1)
+#include "cmsis_os.h"
 #include <queue.h>
 #include "OLED/test.h"
 #endif
@@ -731,18 +732,18 @@ void StartFFT(void *argument)
 		}
 
 		/* analyze signal */
-#if (RTOS == 1)
-		taskENTER_CRITICAL();
-#elif (RTOS == 2)
-		osKernelLock();
-#endif
+//#if (RTOS == 1)
+//		taskENTER_CRITICAL();
+//#elif (RTOS == 2)
+//		osKernelLock();
+//#endif
 		arm_rfft_fast_f32(&fft, fft_input, fft_output, ifftFlag);
 		arm_cmplx_mag_f32(fft_output, fft_power, SAMPLE_BUFFER_LENGTH_HALF);
-#if (RTOS == 1)
-		taskEXIT_CRITICAL();
-#elif (RTOS == 2)
-		osKernelUnlock();
-#endif
+//#if (RTOS == 1)
+//		taskEXIT_CRITICAL();
+//#elif (RTOS == 2)
+//		osKernelUnlock();
+//#endif
 
 		/* find dominant frequency */
 		float32_t maxValue;
